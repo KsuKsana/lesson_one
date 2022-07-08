@@ -18,3 +18,9 @@ def test_for_ice_cream():
     assert lesson_one.icecream(3) == "Yes"
     assert lesson_one.icecream(5) == "Yes"
     assert lesson_one.icecream(6) == "No"
+
+def test_for_even_number():
+    assert lesson_one.even_numbers(8,2) == [4, 6]
+    assert 100 in lesson_one.even_numbers(4,122)
+    assert 4 not in lesson_one.even_numbers(4,122)
+    assert 122 not in lesson_one.even_numbers(4,122)

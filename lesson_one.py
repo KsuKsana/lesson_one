@@ -39,3 +39,12 @@ def icecream(number_of_balls):
         return "No"
 #
 # print(icecream(7))
+
+def even_numbers(a, b):
+    result = list()
+    for number in range(min(a,b)+1, max(a,b)):
+        if number % 2 == 0:
+            result.append(number)
+    return result
+
+# print(even_numbers(8,2))
